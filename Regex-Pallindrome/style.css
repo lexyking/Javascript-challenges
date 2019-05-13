@@ -23,7 +23,7 @@ body {
     background: var(--beige);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 2rem 0;
 }
 
@@ -31,6 +31,14 @@ body {
     text-transform: uppercase;
     font-weight: bolder;
     letter-spacing: .5rem;
+}
+
+.date{
+    /* border: 2px solid; */
+    height: 100%;
+    width: 12rem;
+    font-size: .9rem;
+    align-self: center;
 }
 
 .mainSection{
@@ -44,10 +52,15 @@ body {
 }
 
 .entry, .submit, .exit{
+     position: relative;
     width: 50%;
     margin: auto;
     /* border: 2px solid; */
     display: flex;
+}
+
+.inputString{
+    font-weight: bolder;
 }
 .inputString, .exit p{
     width: 100%;
@@ -56,6 +69,25 @@ body {
     background: var(--tuscan);
     border-radius: 10px;
     border: none;
+   
+}
+.checkedRight{
+     position: absolute;
+   right: 0.5rem;
+   top: 0;
+   color: green;
+  
+}
+.checkedWrong{
+     position: absolute;
+   right: 0.5rem;
+   top: 0;
+   color: red;
+
+}
+.visible{
+    visibility: hidden;
+
 }
 
 .submitBtn{
